@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>EasyGov – Government Service Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap bar">
+<div class="logo">🏛️ EasyGov</div>
+<nav><a href="#home" data-t="nHome"></a><a href="#services" data-t="nSvc"></a><a href="#schemes" data-t="nSch"></a><a href="#faq" data-t="nFaq"></a></nav>
+<div class="lang" role="group" aria-label="Language"><button id="b0" onclick="setL(0)">EN</button><button id="b1" onclick="setL(1)">தமிழ்</button></div>
+</div></header>
+
+<main>
+<div class="wrap hero" id="home">
+<h1 data-t="h1"></h1><p data-t="hp"></p>
+<div class="search"><input type="search" id="q" data-ph="ph" aria-label="Search"></div>
+<div class="chips" id="chips"></div>
+</div>
+
+<section id="services"><div class="wrap">
+<h2 data-t="nSvc"></h2><p class="sub" data-t="svSub"></p>
+<div class="grid" id="svc"></div><div id="empty" data-t="none"></div>
+</div></section>
+
+<section id="schemes"><div class="wrap">
+<h2 data-t="nSch"></h2><p class="sub" data-t="scSub"></p>
+<div class="grid" id="sch"></div>
+</div></section>
+
+<section id="faq"><div class="wrap">
+<h2 data-t="nFaq"></h2><p class="sub" data-t="fqSub"></p>
+<div id="faqs"></div>
+</div></section>
+</main>
+
+<footer><div class="wrap" data-t="foot"></div></footer>
+
+<dialog id="dlg"><div id="dc"></div></dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
